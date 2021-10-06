@@ -9,7 +9,7 @@ public class bubble_Sort {
         printSortedArray();
     }
     
-    private void doSorting() {
+    private static void doSorting() {
         for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
             for (int i = 0; i < lastUnsortedIndex; i++) {
                 if (i != j && intArray[i] > intArray[i + 1]) {
@@ -19,7 +19,7 @@ public class bubble_Sort {
         }
     }
     
-    private void printSortedArray() {
+    private static void printSortedArray() {
         for (int i = 0; i < intArray.length; i++) {
             System.out.print(intArray[i] + " ");
         }
